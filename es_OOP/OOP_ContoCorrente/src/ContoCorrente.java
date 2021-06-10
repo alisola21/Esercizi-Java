@@ -7,15 +7,15 @@ public class ContoCorrente {
 	
 	private double saldo; //private -> evito modifiche esterne al saldo
 	
-	//varaibile numero -> serve per asegnare un numero identificativo a ogni cc
+	//var numero -> serve per asegnare un numero identificativo a ogni cc
 	private int numero;
 	
-	//variabile condivisa (modificatore static) -> è la stessa per tutti gli oggetti
+	//variabile condivisa (modificatore static) -> ï¿½ la stessa per tutti gli oggetti
 	private static int numeroUltimoContoCreato = 1000; //il primo cc ha come numero 1001
 	
 
 	/*var tasso (d'istanza) utilizzata per calcolare gli interessi (pubblica per modificarla quando voglio, in accordo con la banca)
-	è meglio utilizzare una var statica per non dover calcolare tutte le volte il tasso all'interno dei diversi cc
+	ï¿½ meglio utilizzare una var statica per non dover calcolare tutte le volte il tasso all'interno dei diversi cc
 	*/
 	public static double tasso = 0.2; //2% 
 	
@@ -47,13 +47,13 @@ public class ContoCorrente {
 			return true;
 		}
 	}
-		//preleva -> metodo che serve per prelevare soldi dal conto e che restituisce false se il credito no, è sufficiente
+		//preleva -> metodo che serve per prelevare soldi dal conto e che restituisce false se il credito no, ï¿½ sufficiente
 			/*public void preleva (double somma) {
 				saldo -= somma;
 				//traccia i movimenti
 				System.out.println("Prelevati " +somma+ " euro");*/
 			
-		//metodo preleva 2 ->  a differenza del primo, restituisce false se il credito non è sufficiente (ha il return)
+		//metodo preleva 2 ->  a differenza del primo, restituisce false se il credito non ï¿½ sufficiente (ha il return)
 		
 		//metodo ottieniSaldo -> serve per far leggere al main il saldo
 		public double ottieniSaldo() {
